@@ -1,1 +1,2 @@
-# LoremBank
+# template
+Site template

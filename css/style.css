@@ -1,0 +1,255 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-spacing: 0;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Regular.woff2") format("woff2"),
+    url("../fonts/OpenSans-Regular.ttf") format("opentype"),
+    url("../fonts/OpenSans-Regular.woff") format("woff");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Bold.woff2") format("woff2"),
+    url("../fonts/OpenSans-Bold.ttf") format("opentype"),
+    url("../fonts/OpenSans-Bold.woff") format("woff");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "LetoSans";
+  src: url("../fonts/LetoSans.otf") format("opentype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "LetoSans";
+  src: url("../fonts/LetoSans-Bold.otf") format("opentype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "LetoSans";
+  src: url("../fonts/LetoSans-Thin.otf") format("opentype");
+  font-weight: lighter;
+}
+body {
+  font-family: "LetoSans";
+}
+.field {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/main_end.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+}
+.aside {
+  width: 50%;
+  height: 100%;
+  padding: 20px 0 5px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 2;
+}
+.logo-text {
+	color: #fff;
+	font-size: 24px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.aside-card {
+  margin: 0 auto;
+}
+.img-cont {
+  width: 370px;
+  height: 230px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.45);
+  background-image: url(..//img/card_6.jpg);
+  background-size: cover;
+}
+.aside-about {
+  width: 370px;
+  margin-top: 30px;
+  text-align: center;
+}
+.aside-about-text {
+  color: #fff;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+}
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-item {
+  width: 33%;
+  padding-bottom: 10px;
+}
+.footer-link {
+  color: #fff;
+  border-bottom: 1px #969696 solid;
+  font-size: 14px;
+  /* font-weight: bold; */
+}
+.link-desc {
+  padding-top: 3px;
+  display: block;
+  color: #969696;
+  font-size: 12px;
+  font-weight: bold;
+}
+.footer-link-lang-ch {
+	margin-left: 40px;
+}
+.footer-link-lang-en::after, .footer-link-lang-ch::after {
+	content: "";
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	margin-left: 7px;
+}
+.footer-link-lang-en::after {
+	background-image: url(../img/enflag.png);
+	background-size: cover;
+}
+.footer-link-lang-ch::after {
+	background-image: url(../img/chflag.png);
+	background-size: cover;
+}
+
