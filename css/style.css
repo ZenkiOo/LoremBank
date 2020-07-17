@@ -165,7 +165,7 @@ a {
 body {
   font-family: "LetoSans";
 }
-.field {
+.background {
   width: 100%;
   height: 100vh;
   background-image: url(../img/main_end.jpg);
@@ -420,4 +420,86 @@ body {
 }
 .services-img:nth-child(n+2) {
   margin-left: 30px;
+}
+.block-form {
+  padding: 30px 40px 30px 40px;
+  display: flex;
+  flex-direction: column;
+  background-color: #461632;
+}
+.form-title {
+  font-size: 52px;
+  font-weight: bold;
+  color: #fff;
+  padding-bottom: 50px;
+}
+/* .form {
+  margin: 0 auto;
+} */
+.form-group:nth-child(n+2) {
+  margin-top: 30px;
+}
+/* .form-actions {
+  text-align: center;
+} */
+.field-label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 12px;
+  color: #dadada;
+}
+.field, .date {
+  box-sizing: border-box;
+  display: block;
+  width: 400px;
+  border: 2px solid #dadada98;
+  border-radius: 7px;
+  margin: 0;
+  font-size: 13px;
+  padding: 10px 20px;
+  height: 50px;
+  background-color: #ffffff;
+}
+.date {
+  width: 200px;
+}
+.button {
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 10px 25px;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+.button-clear {
+  background-color: transparent;
+  color: #fff;
+  margin-right: 5px;
+}
+.button-submit {
+  color: #ffffff;
+  background: linear-gradient(#CA384D 0%, #9D0229 100%);
+}
+.field:focus, .button:focus {
+  outline: 2px solid #0f8fee;
+  outline-offset: 4px;
+}
+.button:hover {
+  background: linear-gradient(#CA384D 0%, #9D0229 100%);
+}
+.button-clear:hover {
+  color: #ffffff;
+}
+.button-submit:hover {
+  padding: 10px 40px;
+}
+.field, .date, .button {
+  font-family: inherit;
+}
+.textarea {
+  min-width: 400px;
+  max-width: 400px;
+  min-height: 100px;
+  max-height: 250px;
 }

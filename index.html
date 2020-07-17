@@ -56,7 +56,7 @@
       <section class="block-title">
         <h1 class="title">Кредитная карта «Можно больше»</h1>
         <h2 class="subtitle">Чтобы все мечты сбывались!</h2>
-        <a href="#" class="order-button">Заказать карту</a>
+        <a href="#blockform" class="order-button">Заказать карту</a>
         <a href="#edge" class="arrow"></a>
       </section>
 
@@ -101,8 +101,8 @@
       <section class="block-pay block">
         <h3 class="pay-title all-titles">Оплачивать кредит просто</h3>
         <p class="pay-text all-text">
-          Дистанционно в сервисе переводов «МКБ Платежи» или мобильном и
-          интернет-банке «МКБ Онлайн» с карты любого банка.
+          Дистанционно в сервисе переводов «LOREM Платежи» или мобильном и
+          интернет-банке «LOREM Онлайн» с карты любого банка.
         </p>
         <p class="pay-text all-text pay-text2">
           В салонах связи «Связной» <span class="sup">2</span>, терминалах и
@@ -128,8 +128,59 @@
           <div class="services-img services-img3"></div>
         </div>
       </section>
+
+      <section class="block-form" id="blockform">
+        <h2 class="form-title">Оформить кредитную карту</h2>
+        <form class="form">
+          <div class="form-group">
+            <label class="field-group">
+              <span class="field-label">Фамилия</span>
+              <input class="field" placeholder="Иванов" required>
+            </label>
+          </div>
+          <div class="form-group">
+            <label class="field-group">
+              <span class="field-label">Имя</span>
+              <input class="field" placeholder="Иван" required>
+            </label>
+          </div>
+          <div class="form-group">
+            <label class="field-group">
+              <span class="field-label">Отчество</span>
+              <input class="field" placeholder="Иванович" required>
+            </label>
+          </div>
+          <div class="form-group">
+            <label class="field-group">
+              <span class="field-label">Дата рождения</span>
+              <input class="date" id="date" type="date" value="1991-01-01">
+            </label>
+          <div class="form-group">
+            <label class="field-group">
+              <span class="field-label">Введите свой email, чтобы мы могли ответить</span>
+              <input type="email" class="field" placeholder="Например, test@ya.ru" required>
+            </label>
+          </div>
+          <div class="form-group">
+            <label class="field-group">
+              <span class="field-label">Мобильный телефон</span>
+              <input type="tel" class="field" placeholder="89999779979" required>
+            </label>
+          </div>
+          <div class="form-group">
+            <label class="field-group">
+              <span class="field-label">Комментарий</span>
+              <textarea class="field textarea" placeholder="Привет.." required></textarea>
+            </label>
+          </div>
+          <div class="form-group form-actions">
+            <button class="button button-clear" type="reset">Очистить</button>
+            <button class="button button-submit" type="submit">Отправить</button>
+          </div>
+        </form>
+      </section>
     </main>
-    <div class="field"></div>
+    <div class="background"></div>
     <script src="js/scripts.js"></script>
   </body>
 </html>
