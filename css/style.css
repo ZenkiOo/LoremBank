@@ -503,3 +503,33 @@ body {
   min-height: 100px;
   max-height: 250px;
 }
+.checkbox {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  height: 1px;
+  width: 1px;
+}
+.checkbox-text {
+  display: inline-block;
+  font-size: 13px;
+  color: #dadada;
+}
+.checkbox-text::before {
+  display: inline-block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  background-image: url(..//icons/checkbox-unchecked.svg);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  vertical-align: middle;
+}
+.checkbox:checked ~ .checkbox-text::before {
+  background-image: url(..//icons/checkbox-checked.svg);
+}
+.checkbox:focus ~ .checkbox-text::before {
+  outline: 2px solid #0f8fee;
+  outline-offset: 2px;
+}
