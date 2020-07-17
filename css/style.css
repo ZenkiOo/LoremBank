@@ -304,7 +304,7 @@ body {
   background-size: 60px 34px;
 }
 .block-edge {
-  padding: 70px 42px 0 42px;
+  padding: 70px 42px 65px 42px;
 }
 .edge-title {
   padding-bottom: 35px;
@@ -337,25 +337,87 @@ body {
   font-size: 14px;
   color: #969696;
 }
-.period {
+.all-links {
   display: inline-block;
   border-bottom: 1px solid #4100aa4f;
   color: #4100aa;
   transition: 0.3s;
 }
-.period:hover {
+.all-links:hover {
   color: #c62d57;
   border-bottom: 1px solid #c62d5669;
 }
-.edge-footer {
-  padding-top: 15px;
+.block-footer {
+  padding-top: 10px;
   border-top: 1px solid #96969646;
 }
-.edge-footer-text {
+.footer-text {
   font-size: 13px;
   color: #969696;
 }
 .sup {
   vertical-align: super;
   font-size: 10px;
+}
+.block {
+  padding: 65px 220px 65px 80px;
+}
+.block-present {
+  background-color: #f5f7fb;
+  background-image: url(..//img/present.png);
+  background-repeat: no-repeat;
+  background-size: 280px;
+  background-position: 480px 7px;
+  padding: 65px 220px 65px 80px;
+}
+
+.all-titles {
+  font-size: 24px;
+  font-weight: bold;
+  color: #3c3c3c;
+  padding-bottom: 30px;
+}
+.all-text {
+  font-size: 17px;
+  color: #3c3c3c;
+}
+.block-pay {
+  padding: 65px 80px 440px 80px;
+  background-image: url(..//img/pc.png);
+  background-repeat: no-repeat;
+  background-size: 600px;
+  background-position: center 370px;
+}
+.pay-text2 {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.block-services {
+  padding: 65px 80px 65px 80px;
+  background-color: #f5f7fb;
+}
+.services-imgs {
+  padding-top: 15px;
+  display: flex;
+}
+.services-img {
+  width: 70px;
+  height: 70px;
+  background-repeat: no-repeat;
+  background-size: 70px;
+}
+.services-img1 {
+  background-image: url(../img/ApplePay.png);
+}
+.services-img2 {
+  background-image: url(../img/GooglePay.png);
+}
+.services-img3 {
+  width: 145px;
+  background-size: 140px;
+  background-image: url(../img/SamsungPay.png);
+  background-position: 0 15px;
+}
+.services-img:nth-child(n+2) {
+  margin-left: 30px;
 }
