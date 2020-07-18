@@ -173,6 +173,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: fixed;
+  z-index: 9;
 }
 .aside {
   width: 50%;
@@ -182,13 +183,13 @@ body {
   flex-direction: column;
   justify-content: space-between;
   position: fixed;
-  z-index: 2;
+  z-index: 10;
 }
 .logo-text {
-	color: #fff;
-	font-size: 24px;
-	text-transform: uppercase;
-	font-weight: bold;
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 .aside-card {
   margin: 0 auto;
@@ -199,7 +200,7 @@ body {
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.45);
-  background-image: url(..//img/card_6.jpg);
+  background-image: url(..//img/loremcard.png);
   background-size: cover;
 }
 .aside-about {
@@ -234,29 +235,35 @@ body {
   font-weight: bold;
 }
 .footer-link-lang-ch {
-	margin-left: 40px;
+  margin-left: 40px;
 }
-.footer-link-lang-en::after, .footer-link-lang-ch::after {
-	content: "";
-	position: absolute;
-	width: 25px;
-	height: 25px;
-	margin-left: 7px;
+.footer-link-lang-en::after,
+.footer-link-lang-ch::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  margin-left: 7px;
 }
 .footer-link-lang-en::after {
-	background-image: url(../img/enflag.png);
-	background-size: cover;
+  background-image: url(../img/enflag.png);
+  background-size: cover;
 }
 .footer-link-lang-ch::after {
-	background-image: url(../img/chflag.png);
-	background-size: cover;
+  background-image: url(../img/chflag.png);
+  background-size: cover;
 }
 .main {
   width: 50%;
   margin-left: 50%;
-  height: 3333px;
   position: absolute;
-  z-index: 2;
+  z-index: 10;
+}
+.block-title,
+.block-edge,
+.block-present,
+.block-pay,
+.block-services {
   background-color: #fff;
 }
 .block-title {
@@ -282,7 +289,7 @@ body {
   margin-top: 30px;
   text-align: center;
   color: #fff;
-  background: linear-gradient(#CA384D 0%, #9D0229 100%);
+  background: linear-gradient(#ca384d 0%, #9d0229 100%);
   border-radius: 15px;
   transition: 0.4s;
 }
@@ -313,7 +320,7 @@ body {
   color: #3c3c3c;
 }
 .edge-item {
-  padding:0 10px 30px 80px;
+  padding: 0 10px 30px 80px;
   background-repeat: no-repeat;
   background-size: 55px;
   background-position: 0 1px;
@@ -364,13 +371,12 @@ body {
 }
 .block-present {
   background-color: #f5f7fb;
-  background-image: url(..//img/present.png);
+  background-image: url(..//img/lorempresent.png);
   background-repeat: no-repeat;
   background-size: 280px;
   background-position: 480px 7px;
   padding: 65px 220px 65px 80px;
 }
-
 .all-titles {
   font-size: 24px;
   font-weight: bold;
@@ -383,7 +389,7 @@ body {
 }
 .block-pay {
   padding: 65px 80px 440px 80px;
-  background-image: url(..//img/pc.png);
+  background-image: url(..//img/lorempc.png);
   background-repeat: no-repeat;
   background-size: 600px;
   background-position: center 370px;
@@ -418,14 +424,14 @@ body {
   background-image: url(../img/SamsungPay.png);
   background-position: 0 15px;
 }
-.services-img:nth-child(n+2) {
+.services-img:nth-child(n + 2) {
   margin-left: 30px;
 }
 .block-form {
   padding: 30px 40px 30px 40px;
   display: flex;
   flex-direction: column;
-  background-color: #461632;
+  background-color: rgba(70, 22, 50, 0.4);
 }
 .form-title {
   font-size: 52px;
@@ -433,22 +439,17 @@ body {
   color: #fff;
   padding-bottom: 50px;
 }
-/* .form {
-  margin: 0 auto;
-} */
-.form-group:nth-child(n+2) {
+.form-group:nth-child(n + 2) {
   margin-top: 30px;
 }
-/* .form-actions {
-  text-align: center;
-} */
 .field-label {
   display: block;
   font-size: 14px;
   margin-bottom: 12px;
   color: #dadada;
 }
-.field, .date {
+.field,
+.date {
   box-sizing: border-box;
   display: block;
   width: 400px;
@@ -479,14 +480,15 @@ body {
 }
 .button-submit {
   color: #ffffff;
-  background: linear-gradient(#CA384D 0%, #9D0229 100%);
+  background: linear-gradient(#ca384d 0%, #9d0229 100%);
 }
-.field:focus, .button:focus {
+.field:focus,
+.button:focus {
   outline: 2px solid #0f8fee;
   outline-offset: 4px;
 }
 .button:hover {
-  background: linear-gradient(#CA384D 0%, #9D0229 100%);
+  background: linear-gradient(#ca384d 0%, #9d0229 100%);
 }
 .button-clear:hover {
   color: #ffffff;
@@ -494,7 +496,9 @@ body {
 .button-submit:hover {
   padding: 10px 40px;
 }
-.field, .date, .button {
+.field,
+.date,
+.button {
   font-family: inherit;
 }
 .textarea {
@@ -532,4 +536,84 @@ body {
 .checkbox:focus ~ .checkbox-text::before {
   outline: 2px solid #0f8fee;
   outline-offset: 2px;
+}
+@media (min-width: 1535px) {
+  .img-cont {
+    margin: 0 auto;
+  }
+  .aside-about {
+    width: 440px;
+  }
+  .aside-about-text {
+    font-size: 20px;
+  }
+  .footer-link {
+    font-size: 20px;
+  }
+  .link-desc {
+    font-size: 16px;
+  }
+  .block-title {
+    padding: 200px 130px 0 130px;
+  }
+  .title {
+    font-size: 60px;
+  }
+  .subtitle {
+    font-size: 30px;
+  }
+  .order-button {
+    width: 250px;
+    font-size: 24px;
+    padding: 25px 0;
+    margin-top: 50px;
+  }
+  .order-button:hover {
+    width: 290px;
+  }
+  .edge-item {
+    background-size: 70px;
+    padding-left: 90px;
+  }
+  .edge-title {
+    font-size: 42px;
+  }
+  .edge-item-title {
+    font-size: 30px;
+  }
+  .edge-item-desc {
+    font-size: 18px;
+  }
+  .all-titles {
+    font-size: 35px;
+  }
+  .all-text {
+    font-size: 20px;
+  }
+  .block-present {
+    background-position: 560px 7px;
+  }
+  .block-pay {
+    background-position: center 420px;
+  }
+  .form-title {
+    font-size: 60px;
+  }
+  .field-label {
+    font-size: 19px;
+  }
+  .checkbox-text {
+    font-size: 16px;
+  }
+  .button {
+    font-size: 19px;
+  }
+}
+@media (min-width: 1679px) {
+  .block-title {
+    padding: 230px 130px 0 130px;
+  }
+  .title {
+    font-size: 69px;
+  }
 }
