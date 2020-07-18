@@ -226,6 +226,11 @@ body {
   color: #fff;
   border-bottom: 1px #969696 solid;
   font-size: 14px;
+  transition: 0.3s;
+}
+.footer-link:hover {
+  color: #ff5e89;
+  border-bottom: 1px #ff5e89 solid;
 }
 .link-desc {
   padding-top: 3px;
