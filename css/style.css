@@ -483,8 +483,9 @@ body {
   background: linear-gradient(#ca384d 0%, #9d0229 100%);
 }
 .field:focus,
-.button:focus {
-  outline: 2px solid #0f8fee;
+.button:focus,
+.date:focus {
+  outline: 2px solid #a43876;
   outline-offset: 4px;
 }
 .button:hover {
@@ -534,7 +535,7 @@ body {
   background-image: url(..//icons/checkbox-checked.svg);
 }
 .checkbox:focus ~ .checkbox-text::before {
-  outline: 2px solid #0f8fee;
+  outline: 2px solid #a43876;
   outline-offset: 2px;
 }
 @media (min-width: 1535px) {
@@ -615,5 +616,74 @@ body {
   }
   .title {
     font-size: 69px;
+  }
+}
+@media (min-width: 1919px) {
+  .img-cont {
+    width: 640px;
+    height: 400px;
+    border-radius: 20px;
+  }
+  .aside-about {
+    width: 640px;
+  }
+  .aside-about-text {
+    font-size: 29px;
+  }
+  .footer-link {
+    font-size: 23px;
+  }
+  .link-desc {
+    font-size: 19px;
+  }
+  .block-title {
+    padding: 250px 130px 0 130px;
+  }
+  .title {
+    font-size: 80px;
+  }
+  .subtitle {
+    font-size: 40px;
+  }
+  .order-button {
+    width: 300px;
+    font-size: 28px;
+    padding: 30px 0;
+    margin-top: 70px;
+    border-radius: 20px;
+  }
+  .order-button:hover {
+    width: 350px;
+  }
+  .edge-item {
+    background-size: 90px;
+    padding-left: 120px;
+  }
+  .edge-title {
+    font-size: 53px;
+  }
+  .edge-item-title {
+    font-size: 39px;
+  }
+  .edge-item-desc {
+    font-size: 18px;
+  }
+  .block-present {
+    background-position: 760px 7px;
+  }
+  .block-pay {
+    background-position: center 380px;
+  }
+}
+@media (max-width: 1100px) {
+  .block-title {
+    padding: 200px 40px 0 40px;
+  }
+  .block-present {
+    background-position: 320px 47px;
+  }
+  .block-pay {
+    background-position: center 430px;
+    background-size: 470px;
   }
 }
