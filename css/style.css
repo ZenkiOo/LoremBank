@@ -372,7 +372,7 @@ body {
   font-size: 10px;
 }
 .block {
-  padding: 65px 220px 65px 80px;
+  padding: 65px 80px 65px 80px;
 }
 .block-present {
   background-color: #f5f7fb;
@@ -951,7 +951,7 @@ body {
     background-position: 5px 17px;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 460px) {
   .logo-text {
     font-size: 33px;
   }
@@ -992,6 +992,10 @@ body {
   .footer-text {
     font-size: 13px;
   }
+  .block {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .all-titles {
     font-size: 22px;
   }
@@ -1000,18 +1004,21 @@ body {
   }
   .block-present {
     padding-right: 150px;
-      background-position: right -140px top 37px;
+    background-position: right -140px top 37px;
   }
   .block-pay {
     background-size: 350px;
     padding-bottom: 300px;
-}
-.form-title {
-  font-size: 40px;
-  font-weight: bold;
-  color: #fff;
-  padding-bottom: 50px;
-}
+  }
+  .block-form {
+    padding: 30px 20px 30px 20px;
+  }
+  .form-title {
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    padding-bottom: 50px;
+  }
   .field-label {
     font-size: 16px;
   }
@@ -1037,5 +1044,65 @@ body {
   }
   .button-submit:hover {
     padding: 10px 30px;
+  }
+}
+@media (max-width: 410px) {
+  .logo-text {
+    font-size: 25px;
+  }
+  .img-cont {
+    width: 280px;
+    height: 180px;
+    border-radius: 8px;
+  }
+  .aside-about-text {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .footer-link {
+    font-size: 15px;
+  }
+  .footer-link-lang-ch {
+    margin-left: 30px;
+  }
+  .footer-link-lang-en::after,
+  .footer-link-lang-ch::after {
+    width: 15px;
+    height: 15px;
+    margin-left: 3px;
+  }
+  .link-desc {
+    font-size: 13px;
+  }
+  .title {
+    font-size: 37px;
+  }
+  .subtitle {
+    font-size: 20px;
+  }
+  .order-button {
+    width: 170px;
+    padding: 16px 0;
+    margin-top: 40px;
+    font-size: 16px;
+  }
+  .order-button:hover {
+    width: 200px;
+  }
+  .block-edge {
+    padding: 120px 20px 65px 20px;
+  }
+  .edge-item {
+    background-size: 65px;
+    padding-left: 80px;
+  }
+  .edge-title {
+    font-size: 30px;
+  }
+  .edge-item-title {
+    font-size: 20px;
+  }
+  .edge-item-desc {
+    font-size: 16px;
   }
 }
